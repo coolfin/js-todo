@@ -10,16 +10,26 @@
 
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
-
 </head>
 
 <body>
   <div id="wrapper" class="max-width">
-    <span>TODO</span>
-    <form>
-      <input id="todo" type="text" placeholder="할 일을 입력해 주세요" autofocus />
-      <button id="todo-btn">추가</button>
-    </form>
+    <div id="todo-text">TODO</div>
+
+    <div id="todo-input-wrapper" class="flex-sb-c">
+      <input id="todo" name="todo" type="text" placeholder="할 일을 입력해 주세요." autofocus />
+      <select id="todo-select" name="todo-select">
+        <option value="1">낮음</option>
+        <option value="2">보통</option>
+        <option value="3">높음</option>
+      </select>
+    </div>
+
+    <button id="todo-btn">추가</button>
+
+    <div id="todo-link">
+      <a href="./todolist.html"> todo list 보러가기 </a>
+    </div>
   </div>
   <script src="./index.js"></script>
 </body>

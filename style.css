@@ -1,5 +1,5 @@
 body {
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
 
   display: flex;
   justify-content: center;
@@ -7,22 +7,114 @@ body {
 }
 
 #wrapper {
+  width: 60%;
+}
+
+#todo-text {
+  width: 100%;
+  height: 40px;
+
+  margin-bottom: 20px;
+
+  font-size: 2rem;
 }
 
 form {
+  width: 100%;
+
+  flex-direction: column;
+}
+
+#todo-input-wrapper {
+  width: 100%;
+  height: 60px;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+input[type='text'] {
+  width: 80%;
+  height: 60px;
+
+  padding: 0;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  text-indent: 20px;
+  font-size: 16px;
+
+  outline: none;
+}
+
+select {
+  width: 18%;
+  height: 60px;
+
+  padding: 0;
+
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  text-indent: 20px;
+  font-size: 16px;
+
+  outline: none;
+
+  appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  background-color: red;
+}
+
+#todo-btn {
+  width: 100%;
+  height: 60px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #333;
+  color: #fff;
+
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#todo-btn:hover {
+  background-color: #555;
+}
+
+.wrraper {
+  max-width: 1248px;
+  min-width: 368px;
+  box-sizing: border-box;
+}
+
+/*-----------------------------*/
+.flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-sb-c {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.max-width {
-  max-width: 1248px;
-}
-
-#todo {
-  width: 200px;
-}
-
-#todo-btn {
-
+.flex-c-s {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
