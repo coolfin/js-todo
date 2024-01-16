@@ -14,9 +14,7 @@ function addTodo(text, selected) {
     arr.push(d);
     window.localStorage.setItem('todo', JSON.stringify(arr));
 
-    alert(
-      '할 일이 추가되었습니다.\n\n' + '중요도: ' + selected + '\n할 일: ' + text
-    );
+    alert('할 일이 추가되었습니다.');
 
     todo.value = '';
     select.value = 1;
@@ -26,11 +24,11 @@ function addTodo(text, selected) {
 }
 
 btn.addEventListener('click', function () {
-  addTodo(todo.value, select.children[select.selectedIndex].text);
+  addTodo(todo.value, select.children[select.selectedIndex].value);
 });
 
 todo.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
-    addTodo(todo.value, select.children[select.selectedIndex].text);
+    addTodo(todo.value, select.children[select.selectedIndex].value);
   }
 });

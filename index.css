@@ -1,11 +1,3 @@
-body {
-  background-color: #d8d8d8;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #wrapper {
   width: 60%;
 }
