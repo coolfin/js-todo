@@ -15,8 +15,16 @@ window.onload = function () {
               ? '보통'
               : '높음'
           }</div>
+          <div class="todo-item-date">${todoList[i].date}</div>
+          <div>
+            <div class="todo-done">V</div>
+            <div class="todo-remove">X</div>
+          </div>
         </div>
       `;
     }
+  } else {
+    const header = document.getElementById('todo-header');
+    header.style.display = 'none';
   }
 };
