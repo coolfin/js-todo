@@ -145,3 +145,12 @@
 .todo-done:hover {
   background-color: #6BD66B;
 }
+
+.color-done {
+  background-color: #4D9F4D;
+}
+
+.btn-done {
+  background-color: #eee;
+  color: #4D9F4D;
+}
