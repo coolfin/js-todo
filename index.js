@@ -10,7 +10,7 @@ function addTodo(text, selected) {
       todo: text,
       importance: selected,
       done: false,
-      date: new Date(),
+      date: new Date().toLocaleString(),
     };
     arr.push(d);
     window.localStorage.setItem('todo', JSON.stringify(arr));
