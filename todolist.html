@@ -12,11 +12,21 @@
 
 <body>
   <div id="wrapper">
-    <div id="todo-header"></div>
+    <div id="todo-header" onclick="handleChangeCategory(event)">
+      <!-- 전체 높음 보통 낮음 완료 -->
+      <div class="todo-header-item active" data-category="all">전체</div>
+      <div class="todo-header-item" data-category="3">높음</div>
+      <div class="todo-header-item" data-category="2">보통</div>
+      <div class="todo-header-item" data-category="1">낮음</div>
+      <div class="todo-header-item" data-category="0">완료</div>
+    </div>
     <div id="todo-main"></div>
 
     <div id="back-btn">
       <a href="./index.html">메인으로 돌아가기</a>
+      <p onclick="tip()">
+        <span>TIP💡</span>
+      </p>
     </div>
   </div>
 
